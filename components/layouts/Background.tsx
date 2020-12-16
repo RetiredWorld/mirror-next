@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 const Background = ():JSX.Element => {
 
     useEffect(()=>{
+
     });
 
     return (<div className="zk-background" >

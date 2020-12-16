@@ -31,7 +31,7 @@ jobs:
           FOLDER: "./"
           SERVER_IP: ${{ secrets.USTC_MIRROR_HOST }}
           USERNAME: ${{ secrets.USTC_MIRROR_USER }}
-          SERVER_DESTINATION: ${{ USTC_MIRROR_PATH }}
+          SERVER_DESTINATION: ${{ secrets.USTC_MIRROR_PATH }}
 
       - name: Execute
         uses: appleboy/ssh-action@master

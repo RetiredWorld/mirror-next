@@ -29,7 +29,7 @@ jobs:
           ARGS: "-avz --delete"
           SERVER_PORT: "22"
           FOLDER: ./
-          SERVER_IP: ${{ secrets.SSH_HOST }}
-          USER_NAME: ${{ secrets.SSH_USERNAME }}
+          SERVER_IP: ${{ secrets.USTC_MIRROR_HOST }}
+          USER_NAME: ${{ secrets.USTC_MIRRO_USER }}
           SERVER_DESTINATION: /home/zeka/files/ustc-next
 

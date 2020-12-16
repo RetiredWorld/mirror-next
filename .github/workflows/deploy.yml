@@ -27,8 +27,8 @@ jobs:
         env:
           DEPLOY_KEY: ${{ secrets.USTC_MIRROR }}
           ARGS: "-avz --delete"
-          SERVER_PORT: "22"
-          FOLDER: ./
+          SERVER_PORT: ${{ secrets.USTC_MIRROR_PORT }}
+          FOLDER: "./"
           SERVER_IP: ${{ secrets.USTC_MIRROR_HOST }}
           USERNAME: ${{ secrets.USTC_MIRRO_USER }}
           SERVER_DESTINATION: /home/zeka/files/ustc-next

@@ -40,5 +40,5 @@ jobs:
           username: ${{ secrets.USTC_MIRROR_USER }}
           key: ${{ secrets.USTC_MIRROR }}
           port: ${{ secrets.USTC_MIRROR_PORT }}
-          script: ${{ USTC_MIRROR_PATH }}/start.sh
+          script: ${{ secrets.USTC_MIRROR_PATH }}/start.sh
 

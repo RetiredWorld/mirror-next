@@ -31,5 +31,14 @@ jobs:
           FOLDER: "./"
           SERVER_IP: ${{ secrets.USTC_MIRROR_HOST }}
           USERNAME: ${{ secrets.USTC_MIRROR_USER }}
-          SERVER_DESTINATION: /home/zeka/files/ustc-next
+          SERVER_DESTINATION: ${{ USTC_MIRROR_PATH }}
+
+      - name: Execute
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.USTC_MIRROR_HOST }}
+          username: ${{ secrets.USTC_MIRROR_USER }}
+          key: ${{ secrets.USTC_MIRROR }}
+          port: ${{ secrets.USTC_MIRROR_PORT }}
+          script: ${{ USTC_MIRROR_PATH }}/start.sh
 

@@ -1,0 +1,10 @@
+[{
+  "type": "directory",
+  "name": "src"
+  },{
+    "type": "directory",
+    "name": "assets"
+  },{
+  "type": "directory",
+  "name": "usr"
+}]

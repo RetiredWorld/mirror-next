@@ -1,0 +1,57 @@
+.mirror-grid {
+  width: 100%;
+  border-spacing: 1rem .5rem;
+}
+
+.mirror-item, .mirror-head {
+  margin: .05rem 0;
+
+  td, th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    word-break: break-all;
+    white-space: break-spaces;
+    height: 1rem;
+    padding: .15rem 0;
+
+    &:first-child {
+      font-size: 1.1rem;
+      text-align: left;
+      width: 40%;
+    }
+
+    &:nth-child(2) {
+      width: 30%;
+      font-size: .9rem;
+    }
+
+    &:last-child {
+      width: 30%;
+    }
+
+    @include mobile() {
+      &:first-child {
+        font-size: 1.1rem;
+        text-align: left;
+        width: 70%;
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:last-child {
+        width: 30%;
+      }
+    }
+  }
+
+  th {
+    font-size: .9rem;
+  }
+}
+
+.hide {
+  display: none;
+}

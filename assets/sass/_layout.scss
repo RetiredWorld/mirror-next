@@ -1,0 +1,43 @@
+.mirror-page-wrapper {
+  width: 60%;
+  margin-top: 2rem;
+
+  @include mobile() {
+    width: 80%;
+  }
+}
+
+.mirror-sidebar {
+  float: right;
+  top: 2rem;
+  position: sticky;
+  text-align: left;
+  width: 22%;
+
+  @include mobile() {
+    text-align: left;
+    position: relative;
+    top: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    float: none;
+    width: 100%;
+  }
+}
+
+.mirror-cp {
+  margin-right: 27%;
+
+  @include mobile() {
+    overflow: auto;
+    margin: 0;
+  }
+}
+
+.mirror-title {
+  font-size: 1.5rem;
+
+  @include mobile() {
+    font-size: 1.2rem;
+  }
+}

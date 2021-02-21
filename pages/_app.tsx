@@ -1,17 +1,23 @@
-import React from "react";
+import React, { FC } from 'react';
 
-import Background from "../components/layouts/Background";
-import Hero from "../components/layouts/Hero";
+import type { AppProps } from 'next/app';
 
-import '../assets/sass/main.scss';
+import Sidebar from '~components/global/sidebar';
+import Nav from '~components/global/nav';
+import '~assets/sass/main.scss';
 
-export default function App({ Component, pageProps }): JSX.Element {
+const App: FC<AppProps> = ({ Component, pageProps }) => {
+  return (<div>
+      <div className="mirror-page-wrapper container">
+          <Nav />
+          <div className="mirror-sidebar">
+              <Sidebar />
+          </div>
+          <div className="mirror-cp">
+              <Component {...pageProps} />
+          </div>
+      </div>
+  </div>);
+};
 
-    return (<div>
-        <Background />
-        <div className="container zk-container">
-            <Hero />
-            <Component {...pageProps} />
-        </div>
-    </div>)
-}
+export default App;

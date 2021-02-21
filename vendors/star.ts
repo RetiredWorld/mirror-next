@@ -122,7 +122,7 @@ export class StarBackground {
         window.removeEventListener('scroll', this.scrollCallback);
         this.cvs.height = this.cvs.height;
         this.hidCvs.height = this.hidCvs.height;
-    }
+    }2222
 
     private _drawFromCache() {
         this.ctx.drawImage(this.hidCvs, -this.hidCvs.width / 2, -this.hidCvs.height / 2);

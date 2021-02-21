@@ -1,0 +1,30 @@
+.mirror-nav {
+  position: fixed;
+  display: block;
+  left: 20px;
+  bottom: 0;
+  z-index: 2333;
+  transform: rotate(-90deg) translate3d(0, 0, 0);
+  transform-origin: 0 0;
+  transition: .3s all ease-out;
+  vertical-align: middle;
+
+  @include mobile() {
+    padding: 10px 5%;
+    background: linear-gradient(to bottom,rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,1   ), rgba(255,255,255,1));
+    display: flex;
+    transform: none;
+    left: 0;
+    right: 0;
+  }
+
+  li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+
+    @include mobile() {
+      flex-grow: 1;
+    }
+  }
+}

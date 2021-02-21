@@ -1,15 +1,10 @@
-@charset "utf-8";
-@import
-"~bulma/sass/utilities/_all",
-"~bulma/sass/base/_all",
-"~bulma/sass/elements/_all",
-"~bulma/sass/grid/_all",
-"~bulma/sass/helpers/_all",
-"~bulma/sass/layout/_all";
+@import "~bulma";
 
-@import "global";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+@import "layout";
 
 @import
-"layouts/background",
-"layouts/container",
-"layouts/hero";
+  "sidebar",
+  "nav",
+  "grid";

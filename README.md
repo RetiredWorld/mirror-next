@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
-=======
-# mirror-next
+See [mirrors.2eka.cloud](https://mirrors.2eka.cloud)
 
-新建文件夹
->>>>>>> f39186766847a067cd18f4d3e7e903d370f864b3
